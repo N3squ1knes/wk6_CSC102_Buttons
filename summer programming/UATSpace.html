@@ -1,0 +1,179 @@
+<!--HTML file for CSC102
+Assignment: Launching your UAT Space Program HTML Document Tags
+Written by Nestor Hernandez
+email: nesrenteria11@gmail.com-->
+<!DOCTYPE html>
+    <!--html tag for assignment-->
+<html>
+<!--head tag for assignment-->
+    <head>
+        <!--the title goes at the title bar-->
+        <Title>
+            Nestor Hernandez's UATSpace Page
+        </Title>
+        <script>
+            //alert function as requiered by assingment
+            var alertText = "Test of the alert function";
+            //alert(alertText);
+        </script>
+        <script src="Code.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <!--<style>
+            body {
+                background-color: rgb(0, 247, 255);
+            }
+        </style>-->
+    </head>
+    <!--body tag as required by assignment-->
+
+    <body>
+        <table>
+            <td>
+                <!--logo for UATSpace-->
+                <img src="UATspaceLogo-1.jpg">
+            </td>
+            <td>
+                <!--fulfils header requirement-->
+                <h1>
+                   Welcome to UATSpace
+                </h1>
+            </td>
+        </table>
+        <br>
+        <br>
+        <table id="data" border="2" width="70%">
+            <col style="width: 35%">
+            <col style="width: 35%">
+            <thead>
+                <th><div id="headerStyle">Data Type</div></th>
+                <th><div id="headerStyle">Reading</div></th>
+            </thead>
+            <tbody>
+                <tr id="seconds">
+                    <td>Time Elapsed</td>
+                    <td>15 seconds</td>
+                </tr>
+                <tr id="latitude">
+                    <td>Latitude</td>
+                    <td>0</td>
+                </tr>
+                <tr id="longitude">
+                    <td>longitude</td>
+                    <td>0</td>
+                </tr>
+                <tr id="gpsAltitude">
+                    <td>GPS Altitude</td>
+                    <td>0</td>
+                </tr>
+                <tr id="bmpAltitude">
+                    <td>BMP Altitude</td>
+                    <td>30383.04</td>
+                </tr>
+                <tr id="bmpPress">
+                    <td>BMP Pressure</td>
+                    <td>2.34</td>
+                </tr>
+                <tr id="bmpTemp">
+                    <td>BMP Temperature</td>
+                    <td>0</td>
+                </tr>
+                <tr id="DigTemp">
+                    <td>Digital Temperature</td>
+                    <td>24.12</td>
+                </tr>
+                <tr id="cssTemp">
+                    <td>CSS Temperature</td>
+                    <td>25</td>
+                </tr>
+                <tr id="cssCO2">
+                    <td>CSS eCO2</td>
+                    <td>400</td>
+                </tr>
+                <tr id="cssTVOC">
+                    <td>CSS TVOC</td>
+                    <td>0</td>
+                </tr>
+                <tr id="UV">
+                    <td>UV</td>
+                    <td>0</td>
+                </tr>
+                <tr id="accelX">
+                    <td>Acceleration X:</td>
+                    <td>-0.87</td>
+                </tr>
+                <tr id="accelY">
+                    <td>Acceleration Y:</td>
+                    <td>-0.02</td>
+                    
+                </tr>
+                <tr id="accelZ">
+                    <td>Acceleration Z:</td>
+                    <td>9.61</td>
+                </tr>
+                <tr id="magneticX">
+                    <td>Magnetic X:</td>
+                    <td>-0.02</td>
+                </tr>
+                <tr id="magneticY">
+                    <td>Magnetic Y:</td>
+                    <td>-0.02</td>
+                </tr>
+                <tr id="magneticZ">
+                    <td>Magnetic Z:</td>
+                    <td>-0.02</td>
+                </tr>
+                <tr id="gyroX">
+                    <td>Gyro X:</td>
+                    <td>4.66</td>
+                </tr>
+                <tr id="gyroY">
+                    <td>Gyro Y:</td>
+                    <td>-0.01</td>
+                </tr>
+                <tr id="gyroZ">
+                    <td>Gyro Z:</td>
+                    <td>0.4</td>
+                </tr>
+            </tbody>
+        </table>
+       
+        <br>
+        <br>
+        <!--button requirements from assignment-->
+        <button id="startbutt" onclick="start()">
+            Start
+        </button>
+
+        <button id="stopbutt" onclick="stop()">
+            Stop
+        </button>
+        <br>
+        <br>
+        Time left before launch:<br>
+        <div id="countdownDisplay">Launch not initiated</div>
+        <br>
+        <br>
+        <h1 id="blink">Craps Game!!</h1>
+        <script type="text/javascript">
+            var blink = document.getElementById('blink');
+            setInterval(function(){
+                blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+            }, 1500);
+        </script>
+        <h2>please play</h2>
+        Die 1 result: <div id="dieRes1">Press Play Craps to roll dice</div><br>
+        Die 2 result: <div id="dieRes2">Press Play Craps to roll dice</div><br>
+        <div id="crapsRes">Craps results</div><br>
+        <br>
+        <button onclick="playCraps()">Play Craps</button>
+        <br>
+        <br>
+        Wins<br>
+        <div id="winRes">get some wins</div><br>
+        Loses<br>
+        <div id="losRes">get some loses</div><br>
+        Ties<br>
+        <div id="tieRes">get some ties</div><br>
+
+    </body>
+</html>

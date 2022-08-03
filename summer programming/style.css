@@ -1,0 +1,17 @@
+body{
+    background: linear-gradient(90deg, white, #2eadc2);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#blink{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+#headerStyle{
+    font-weight: 900;
+}
+#data{
+    background: linear-gradient(180deg, white, lightblue);
+}
